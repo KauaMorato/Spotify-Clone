@@ -36,7 +36,7 @@ const playBtn = document.getElementByID('playBtn');
 playBtn.addEventListener('click', () => {
     if (audio.paused) {
         audio.play();
-        playBtn.innerHTML = "❚❚";
+        playBtn.innerHTML = "⏸";
     } else {
         audio.pause();
         playBtn.innerHTML = "▶";
