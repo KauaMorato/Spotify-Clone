@@ -10,12 +10,12 @@ const songs = [
 
 const songList = document.getElementByID('songList');
 songs.forEach((song, index) => {
-    songList.innerHTML += "
+    songList.innerHTML += `
         <div class="card" onclick="playSong(${index})">
             <img src="${song.img}" alt="${song.title}">
             <h4>${song.title}</h4>
             <p>${song.artist}</p>
-        </div>";
+        </div>`;
 });
 
 // Reprodutor de áudio
